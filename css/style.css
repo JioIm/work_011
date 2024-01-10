@@ -83,20 +83,10 @@ body {
 }
 
 .search_area {
-    /* background: #006272;
-    height: 11.6rem;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-
-    padding: 3rem 0;
-    margin: 0 auto; */
+    background: #006272;
 }
 
 .search_area .search_input {
-    position: relative;
-    background: #006272;
     height: 11.6rem;
     display: flex;
     flex: 1;
@@ -105,6 +95,7 @@ body {
 
     padding: 3rem 0;
     margin: 0 auto;
+    
 }
 
 .search_area .txt_area {
@@ -123,7 +114,12 @@ body {
     font-weight: 500;
 }
 
-.search_area input {
+.search_area .search {
+    position: relative;
+}
+
+.search_area .search input {
+    
     height: 5rem;
     line-height: 6rem;
     width: 60rem;
@@ -135,4 +131,133 @@ body {
 .search_area a span {
     position: absolute;
     font-size: 4rem;
+
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50% );
 }
+
+.MainInfo ul {
+    display: flex;
+justify-content: center;
+gap: 6rem;
+}
+
+
+.MainInfo figure {
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+   vertical-align: middle;
+   background: #f5f7f8;
+   border-radius: 50%;
+}
+
+.MainInfo figure span {
+    display: inline-block;
+   font-size: 7rem;
+   padding: 3rem;
+}
+
+.MainInfo figure p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.MainContent .left  {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.MainContent .left>* {
+    flex: 1;
+    text-align: center;
+}
+
+.MainContent .left figure {
+    position: relative;
+}
+
+.MainContent .left figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.MainContent .left figure .img_box {
+    overflow: hidden;
+    width: 390px;
+    height: 690px;
+}
+
+.MainContent .left figure .inner_text {
+    position: absolute;
+    top: 480px;
+    left: 0;
+    width: 100%;
+    padding: 0 35px;
+    /* box-sizing: border-box; */
+    text-align: left;
+}
+
+.MainContent .left figure .inner_text strong {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 72px;
+}
+
+.MainContent .left figure .inner_text p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 24px 0;
+}
+
+.MainContent .left figure .inner_text .link {
+    text-align: right;
+}
+
+.MainContent .left figure .inner_text .link a {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 60px;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 0 14px 14px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.MainContent .left figure .inner_text .link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.MainContent .left figure .inner_text .link a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
+.MainContent .left figure img {
+    transition: 0.6s;
+}
+
+.MainContent .left figure:hover img {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
