@@ -1,0 +1,138 @@
+* {
+    outline: 1px solid skyblue--;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#header {}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+#header .gnb ul {
+    display: flex;
+    gap: 4rem;
+}
+
+#header .gnb ul>li>a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header .util ul {
+    display: flex;
+    gap: 3rem;
+}
+
+#header .util ul>li>a {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.MainVisual {
+    padding: 6rem 0 0 0;
+}
+
+.MainVisual .main_visual_slide {
+    /* height: 64rem; */
+}
+
+.MainVisual .main_visual_slide .itm {}
+
+.MainVisual .main_visual_slide .itm .tit_area span {
+    display: block;
+    margin: 0 0 1.6rem 0;
+    font-weight: 500;
+}
+
+.MainVisual .main_visual_slide .itm .tit_area p {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 0 0 2rem 0;
+}
+
+.MainVisual .main_visual_slide .itm .btn_area a {
+    display: inline-block;
+    border: 1px solid #006272;
+    padding: 0.6rem 4rem;
+    font-size: 1.6rem;
+    margin: 0 0 2.4rem 0;
+}
+
+.MainVisual .main_visual_slide .itm .img_area {
+    height: 48rem;
+    width: 100%;
+}
+
+.MainVisual .main_visual_slide .itm01 .img_area {
+    background: url(../images/mainVisual_001.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .main_visual_slide .itm02 .img_area {
+    background: url(../images/mainVisual_002.jpg) no-repeat center center/cover;
+}
+
+.search_area {
+    /* background: #006272;
+    height: 11.6rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem 0;
+    margin: 0 auto; */
+}
+
+.search_area .search_input {
+    position: relative;
+    background: #006272;
+    height: 11.6rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+.search_area .txt_area {
+    color: #fff;
+    margin: 0 3rem 0 0;
+}
+
+.search_area .txt_area p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0 0 0.8rem 0;
+}
+
+.search_area .txt_area span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.search_area input {
+    height: 5rem;
+    line-height: 6rem;
+    width: 60rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 0 0 0 3rem;
+}
+
+.search_area a span {
+    position: absolute;
+    font-size: 4rem;
+}
