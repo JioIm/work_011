@@ -43,6 +43,13 @@
                     </ul>
                 </div>
             </div>
+            <div class="mopen">
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
         </header>
 
         <main id="main" class="main">
@@ -89,21 +96,36 @@
                         <div class="itm itm01">
                             <strong>첫 방문 예약하기</strong>
                             <p>연락처를 남겨 주시면 상담 간호사가<br />
-                                전화를 드려 예약을 도와드립니다.</p>
-                            <input type="text" placeholder="010부터 입력해주세요">
-
+                                전화를 드려 예약을 도와드립니다.
+                            </p>
+                            <div class="input_wrap">
+                                <div class="search_form">
+                                   <input type="text" placeholder="010부터 입력해주세요"> 
+                                </div>
+                                <div class="submit">
+                                     <input type="submit" value="간편예약신청">
+                                </div>
+                               
+                            </div>
                         </div>
                         <div class="itm itm02">
-                            <strong>진료안내</strong>
+                            <strong>인터넷 진료 예약</strong>
+                            <p>
+                                홈페이지에서 개인의 일정에 맞춰 빠르고
+                                <br/>쉽게 진료 예약을 할 수 있습니다.
+                            </p>
                             <ul>
                                 <li>
-                                    전화예약 및 문의:1688-7575
+                                    <a class="">첫진료예약</a>
+                                    <span class="material-symbols-outlined">
+                                        library_add
+                                    </span>
                                 </li>
                                 <li>
-                                    암병원:02-3010-1300
-                                </li>
-                                <li>
-                                    어린이병원:02-3010-1230
+                                    <a class="">재진 예약</a>
+                                    <span class="material-symbols-outlined">
+                                        file_open
+                                    </span>
                                 </li>
                             </ul>
 
@@ -164,7 +186,7 @@
                                 <figure>
                                     <a href="">
                                         <span class="material-symbols-outlined">
-                                            contract
+                                            done_outline
                                         </span>
                                         <p>건강검진</p>
                                     </a>
@@ -174,7 +196,7 @@
                                 <figure>
                                     <a href="">
                                         <span class="material-symbols-outlined">
-                                            contract
+                                            call
                                         </span>
                                         <p>전화번호 안내</p>
                                     </a>
@@ -219,11 +241,6 @@
                 <div class="inner">
                     <div class="left_area">
                         <figure>
-                            <div class="img_box box01">
-                                <a href="">
-                                    <!-- <img src="./images/cancer_hospital.jpg" alt=""> -->
-                                </a>
-                            </div>
                             <div class="inner_text">
                                 <strong>암병원</strong>
                                 <span class="material-symbols-outlined">
@@ -232,9 +249,6 @@
                             </div>
                         </figure>
                         <figure>
-                            <div class="img_box box02">
-                                <a href=""></a>
-                            </div>
                             <div class="inner_text">
                                 <strong>어린이병원</strong>
                                 <span class="material-symbols-outlined">
@@ -243,9 +257,6 @@
                             </div>
                         </figure>
                         <figure>
-                            <div class="img_box box02">
-                                <a href=""></a>
-                            </div>
                             <div class="inner_text">
                                 <strong>건강증진센터</strong>
                                 <span class="material-symbols-outlined">
@@ -256,9 +267,6 @@
                             </div>
                         </figure>
                         <figure>
-                            <div class="img_box box02">
-                                <a href=""></a>
-                            </div>
                             <div class="inner_text">
                                 <strong>장례식장</strong>
                                 <span class="material-symbols-outlined">
@@ -273,7 +281,34 @@
 
         <footer id="footer" class="footer">
             <div class="inner">
-
+                <div class="content_box">
+                    <div class="customer_area">
+                      <ul>
+                         <li><a href="">환자권리장전</a></li>
+                          <li><a href="">개인정보처리방침</a></li>
+                          <li><a href="">이용약관</a></li>
+                          <li><a href="">의료정보운영방침</a></li>
+                           <li><a href="">비급여진료비</a></li>
+                           <li><a href="">의무기록사본발급안내</a></li>
+                           <li><a href="">위변조문서확인</a></li>
+                           <li><a href="">이메일 주소수집거부</a></li>
+                           <li><a href="">원격지원서비스</a></li>
+                           <li><a href="">홈페이지이용문의</a></li>
+                      </ul>
+                    </div>
+                    <div class="address_wrap">
+                         <address>
+                            <ul>
+                                <li>(05505) 서울특별시 송파구 올림픽로 43길 88 서울아산병원</li>
+                                <li>대표전화 : 1688-7575</li>
+                            </ul>
+                         </address>
+                    </div>
+                    <copyright>&copy;2014 by Asan Medical Center. All Rights reserved.</copyright>
+                </div>
+               
+               
+                
             </div>
         </footer>
     </div>
