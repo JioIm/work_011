@@ -43,8 +43,8 @@ body {
     padding: 6rem 0 0 0;
 }
 
-.MainVisual .main_visual_slide {
-    /* height: 64rem; */
+.MainVisual .inner {
+    position: relative;
 }
 
 .MainVisual .main_visual_slide .itm {}
@@ -82,6 +82,57 @@ body {
     background: url(../images/mainVisual_002.jpg) no-repeat center center/cover;
 }
 
+.MainVisual .visual_search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.MainVisual .visual_search .itm {
+    padding: 6rem 4rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.MainVisual .visual_search .itm01 {
+    position: relative;
+    background: #006272;
+    color: #fff;
+}
+
+.MainVisual .visual_search .itm01 strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1.6rem 0;
+}
+
+.MainVisual .visual_search .itm01 p {
+    font-size: 1.6rem;
+    margin: 0 0 2.4rem 0;
+}
+
+.MainVisual .visual_search .itm01 input {
+    height: 5rem;
+    line-height: 4rem;
+    width: 32rem;
+    border: none;
+    padding: 0 0 0 3rem;
+}
+
+
+.MainVisual .visual_search .itm02 {
+    background: #F18D00;
+}
+
+.MainVisual .visual_search .itm02 strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1.6rem 0;
+}
+
 .search_area {
     background: #006272;
 }
@@ -95,7 +146,7 @@ body {
 
     padding: 3rem 0;
     margin: 0 auto;
-    
+
 }
 
 .search_area .txt_area {
@@ -119,7 +170,7 @@ body {
 }
 
 .search_area .search input {
-    
+
     height: 5rem;
     line-height: 6rem;
     width: 60rem;
@@ -134,130 +185,153 @@ body {
 
     top: 50%;
     right: 0;
-    transform: translate(-50%, -50% );
+    transform: translate(-50%, -50%);
 }
 
-.MainInfo ul {
+.MainInfo .inner {
     display: flex;
-justify-content: center;
-gap: 6rem;
+    flex-wrap: nowrap;
+
 }
 
-
-.MainInfo figure {
-    width: 20rem;
-    height: 20rem;
-    text-align: center;
-   vertical-align: middle;
-   background: #f5f7f8;
-   border-radius: 50%;
+.MainInfo .tit_area {
+    flex: 1;
 }
 
-.MainInfo figure span {
-    display: inline-block;
-   font-size: 7rem;
-   padding: 3rem;
-}
-
-.MainInfo figure p {
+.MainInfo .tit_area strong {
+    display: block;
     font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    color: #006272;
+}
+
+.MainInfo .tit_area p {
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
-.MainContent .left  {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    gap: 15px;
+
+.MainInfo .list_area {
+    flex: 2;
 }
 
-.MainContent .left>* {
-    flex: 1;
+.MainInfo .list_area ul {
+    display: flex;
+    gap: 5rem;
+}
+
+.MainInfo .list_area ul>li:last-child {
+    gap: 0;
+}
+
+.MainInfo .list_area ul>li figure {
     text-align: center;
 }
 
-.MainContent .left figure {
+.MainInfo .list_area ul>li span {
+    font-size: 6rem;
+    border: 1px solid #006272;
+    border-radius: 50%;
+    padding: 1.6rem;
+    margin: 0 0 0.8rem 0;
+}
+
+.MainInfo .list_area ul>li p {
+    font-weight: 500;
+}
+
+.MainContent .inner {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+}
+
+.MainContent .left_area {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.MainContent .left_area figure {
     position: relative;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #006272;
+    /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); */
 }
 
-.MainContent .left figure img {
-    width: 100%;
-    height: 100%;
-}
 
-.MainContent .left figure .img_box {
+.MainContent .left_area .img_box {
+    width: 34rem;
+    height: 20rem;
     overflow: hidden;
-    width: 390px;
-    height: 690px;
 }
 
-.MainContent .left figure .inner_text {
+.MainContent .left_area .inner_text {
     position: absolute;
-    top: 480px;
-    left: 0;
-    width: 100%;
-    padding: 0 35px;
-    /* box-sizing: border-box; */
-    text-align: left;
+    display: flex;
+    top: 3rem;
+    left: 3rem;
 }
 
-.MainContent .left figure .inner_text strong {
-    font-size: 32px;
-    color: #fff;
-    font-weight: 300;
-    line-height: 72px;
+.MainContent .left_area .inner_text strong {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 0 3rem 0 0;
 }
 
-.MainContent .left figure .inner_text p {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 300;
-    line-height: 24px;
-    margin: 0 0 24px 0;
+.MainContent .left_area .inner_text .ul_area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
 }
 
-.MainContent .left figure .inner_text .link {
-    text-align: right;
+.MainContent .left_area .inner_text .ul_area ul>li {
+    /* padding: 0.8rem; */
 }
 
-.MainContent .left figure .inner_text .link a {
+.MainContent .left_area .inner_text .ul_area ul>li a {
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    border: 1px solid #006272;
+}
+
+/* .MainContent .right_area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.MainContent .right_area figure {
     position: relative;
-    display: inline-block;
-    font-size: 0;
-    width: 60px;
-    border: none;
-    box-sizing: border-box;
-    padding: 14px 0 14px 14px;
-    background: transparent;
-    cursor: pointer;
 }
 
-.MainContent .left figure .inner_text .link a::before {
-    content: "";
+.MainContent .right_area .con_box {
+    width: 68rem;
+    height: 19rem;
+}
+
+.MainContent .right_area .box01 {
+    background: #006272;
+}
+
+.MainContent .right_area .box02 {
+    background: #F3CFB3;
+}
+
+.MainContent .right_area .inner_text {
     position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: #fff;
+    top: 3rem;
+    left: 3rem;
 }
 
-.MainContent .left figure .inner_text .link a::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 8px;
-    height: 1px;
-    background: #fff;
-    transform: rotate(45deg);
-    transform-origin: right;
-}
-
-.MainContent .left figure img {
-    transition: 0.6s;
-}
-
-.MainContent .left figure:hover img {
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
+.MainContent .right_area .inner_text strong {
+    font-size: 2.4rem;
+    font-weight: 500;
+} */
