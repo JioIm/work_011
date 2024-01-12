@@ -8,5 +8,11 @@ $(function () {
         speed: 500,
         fade: true,
         cssEase: 'linear'
-    })
+    });
+
+
+    $('.mopen').on('click', function () {
+        $('.gnb').toggleClass('on');
+        $(this).find('.hamburger').toggleClass('is-active');
+    });
 })
